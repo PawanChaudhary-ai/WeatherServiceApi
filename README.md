@@ -6,6 +6,8 @@ Weather Service API is a .NET Core web application that provides weather informa
 ## Features
 - Retrieve weather information for a specific city by its ID
 - Swagger UI for API documentation and testing
+- Use Postman to test the API
+- Use fidler to test the API
 - Robust error handling
 - Configurable weather data processing
 
