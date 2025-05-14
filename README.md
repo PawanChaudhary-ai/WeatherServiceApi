@@ -63,7 +63,8 @@ Run unit tests using `dotnet test`
 5. Create a Pull Request
 
 ## License
-[Specify your license here]
+MIT License
 
 ## Contact
-[Your contact information]
+Pawan Kumar Chaudhary
+pawan.ai.infoweb@gmail.com
