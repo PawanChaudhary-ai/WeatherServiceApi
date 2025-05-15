@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Net;
+using System.Text.Json;
 using WeatherService.API.Interfaces;
 using WeatherService.API.Models;
 
@@ -34,6 +35,11 @@ public class WeatherDataService : IWeather
                 var client = _clientFactory.CreateClient();
 
                 var response = await client.GetAsync(url);
+                if(response.StatusCode == HttpStatusCode.Unauthorized)
+                {
+                    throw new Exception("Unauthorized User.");
+                }
+
                 var options = new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true

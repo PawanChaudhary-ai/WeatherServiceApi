@@ -47,6 +47,7 @@ Modify `appsettings.json` to adjust application settings.
 3. Run `dotnet restore`
 4. Run `dotnet run`
 5. Open Swagger UI at `http://localhost:5000/swagger` to test the API
+6. For testing the API, use the link - http://localhost:58974/api/WeatherService/2643741
 
 ## Testing
 Run unit tests using `dotnet test`
